@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+scikit-learn
+pandas
+joblib
+
+
+
+
+http://localhost:8000/docs
