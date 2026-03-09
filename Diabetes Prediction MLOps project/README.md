@@ -1,47 +1,25 @@
-# 🩺 Diabetes Prediction Model – Your First MLOps Project (FastAPI + Docker + K8s)
+# Diabetes Prediction Model using FastAPI + Docker
 
-> 🎥 YouTube video for the project: **"Build Your First MLOps Project"**
+Project work flow
 
-This project helps you learn **Building and Deploying an ML Model** using a simple and real-world use case: predicting whether a person is diabetic based on health metrics. We’ll go from:
-
-- ✅ Model Training
-- ✅ Building the Model locally
-- ✅ API Deployment with FastAPI
-- ✅ Dockerization
-- ✅ Kubernetes Deployment
+- Model Training
+- Building the Model locally
+- API Deployment with FastAPI
+- Dockerization
+- Kubernetes Deployment
 
 ---
 
-## 📊 Problem Statement
+## Quick Start
 
-Predict if a person is diabetic based on:
-- Pregnancies
-- Glucose
-- Blood Pressure
-- BMI
-- Age
-
-We use a Random Forest Classifier trained on the **Pima Indians Diabetes Dataset**.
-
----
-
-## 🚀 Quick Start
-
-### 1. Clone the Repo
-
-```bash
-git clone https://github.com/iam-veeramalla/first-mlops-project.git
-cd first-mlops-project
-```
-
-### 2. Create Virtual Environment
+### 1. Create Virtual Environment
 
 ```
 python3 -m venv .mlops
-source .mlops/bin/activate
+.\.mlops\Scripts\activate
 ```
 
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```
 pip install -r requirements.txt
@@ -84,16 +62,9 @@ docker build -t diabetes-prediction-model .
 ```
 docker run -p 8000:8000 diabetes-prediction-model
 ```
-
-## Deploy to Kubernetes
+### To view in web page 
 
 ```
-kubectl apply -f diabetes-prediction-model-deployment.yaml
+http://localhost:8000/docs
 ```
-
-🙌 Credits
-
-Created by `ABHISHEK VEERAMALLA`
-
-Subscribe for more DevOps + MLOps content on the YouTube Channel - `Abhishek.Veeramalla`
 
