@@ -1,4 +1,4 @@
-# Diabetes Prediction Model using FastAPI + Docker
+# Diabetes Prediction Model using FastAPI and Docker
 
 Project work flow
 
@@ -54,7 +54,7 @@ uvicorn main:app --reload
 ### Build the Docker Image
 
 ```
-docker build -t diabetes-prediction-model .
+docker build -t diabetes-prediction-model.
 ```
 
 ### Run the Container
@@ -67,4 +67,5 @@ docker run -p 8000:8000 diabetes-prediction-model
 ```
 http://localhost:8000/docs
 ```
+
 
